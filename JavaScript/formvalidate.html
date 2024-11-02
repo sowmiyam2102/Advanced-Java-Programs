@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FORM VALIDATION</title>
+    </head>
+    <body>
+        <script>
+        function validateform()
+        {
+            var name = document.myform.name.value;
+            var password = document.myform.pass.value;
+            if (name == null || name == "")
+            {
+                alert ("Please enter the usrname");
+                return false;
+            }
+            else if (password.length<8)
+            {
+                alert("Password must be minimum of eight character");
+                return false;
+            }
+        }
+        </script>
+        <form name ="myform" onsubmit ="return validateform()">
+            <center>
+                <b><u> Enter Your Detail </u></b><br><br>
+                Name : <input type ="text" name = "name"><br><br>
+                Password : <input type ="password" name = "pass"><br><br>
+                <input type="submit" value="Login">
+            </center>
+    </form>  
+    </body>
+</html>

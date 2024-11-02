@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Regular Expression</title>
+    </head>
+    <body>
+    <center>
+        <b><u><i>Regular Expression</i></u></b><br><br>
+        <script>
+        document.write("<br><b><u> Searching the word : </u></b><br>");
+        var str="Hello, I am doing JavaScript";
+        document.write("<b> String : </b>" +str);
+        var n=str.search(/Doing/i);
+        document.write("<br><b> The position of the word : </b>" + n +"<br><br>");
+        function fun()
+        {
+            document.write("<b><u> Replacing the word: </u></b><br>")
+            var str="Hi, It's me";
+            document.write("<b>String:</b>"+str);
+            var n = str.replace(/ME/i,"Java");
+            document.write("<br><b> The replaced string will be :</b>" + n +"<br><br>");
+        }
+        fun()
+        </script>
+    </center>
+    </body>
+</html>
